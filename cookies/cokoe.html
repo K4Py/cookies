@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monit Cookie</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div id="monit">
+            <b>Pliki Cookie</b>
+            <br>
+            <b>Ta strona używa plików Cookie, czy zgadzasz się na ich udostępnianie?</b>
+            <br>
+            <button onclick="Akceptuj()">Akceptuj</button>
+            <button onclick="Odrzuć()">Odrzuć</button>
+    </div>
+
+    <script>
+        function Akceptuj()
+        {
+            document.cookie = "cookie=true";
+            window.location.reload(true);
+        }
+
+        function Odrzuć()
+        {
+            document.cookie = "cookie=false";
+            window.location.reload(true);
+        }
+
+    </script>
+</body>
+</html>
